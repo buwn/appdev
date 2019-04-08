@@ -4,9 +4,11 @@
 #include "screen.h"
 void barChart(int db[]){
 	int i,j;
-	for(i = 0; i<COL;i++){	//for 80 columns
-		for(j=0; j<db[i]/3; j++){
-			printf("\033[%d;%dH", 35-j, i+1);
+		for(i = 0; i<COL;i++){	//for 80 columns
+			for(j=0; j<db[i]/3; j++){
+				if(db[i]>60 && j>20) setColors(WHITE, bg(YELLOW));
+				else setColors(RED, bg(YELLOW));
+				printf("\033[%d;%dH", 35-j, i+1);
 #ifdef UNICODE		//conditional compilation
 			printf("%s",BAR);
 #else
