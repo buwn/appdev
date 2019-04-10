@@ -3,6 +3,18 @@
 #include "sound.h"
 #include "screen.h"
 
+//this function is only called by displayWAVDATA(), so no need to put
+// a declaration in sound.h.The function finds how many peaks from 80-pieces
+//of decibel values
+int findPeaks(int d[]){
+	int c = 0, i;
+	for (i=1; i<80; i++){
+		if(d[i] >=75 && d[i-1] <75) c++;
+	}
+	if(d[0] >= 75) c++;
+	return c;
+}
+
 //this function takes 1 second of samples (16000 in our
 //case) and calculated 80 pieces of RMS value, and then
 //turn these values into decibels, and display them as 
@@ -27,6 +39,10 @@ void displayWAVDATA(short s[]){
 	}
 #ifndef DEBUG
 	barChart(dB);
+	int peaks = findPeaks(dB);
+	setColors(WHITE, bg(BLACK));
+	printf("\033[1;61H");
+	printf("Peaks: %d          \n",peaks);
 #endif
 }
 

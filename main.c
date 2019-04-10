@@ -5,6 +5,7 @@
 #include "screen.h"
 #include <stdio.h>
 #include "sound.h"
+#include "comm.h"
 
 int main(){
 	FILE *f;
@@ -25,6 +26,7 @@ int main(){
 		fread(&sd, sizeof(sd), 1, f);
 		displayWAVDATA(sd);
 		fclose(f);		//close the opened file
+		sendDATA(sd);
 	}
 	resetColors();
 
