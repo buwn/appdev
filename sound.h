@@ -24,4 +24,7 @@ struct WAVHDR{
 };
 // function declarations
 void displayWAVHDR(struct WAVHDR h);
+void showID(char *, char *);
 void displayWAVDATA(short []);
+void testTone(int ch, int fL, int fR, float dur);
+
