@@ -5,7 +5,7 @@
 
 //this function is only called by displayWAVDATA(), so no need to put
 // a declaration in sound.h.The function finds how many peaks from 80-pieces
-//of a  decibel values
+//of   decibel values
 int findPeaks(int d[]){
 	int c = 0, i;
 	for (i=1; i<80; i++){

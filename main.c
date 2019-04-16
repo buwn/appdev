@@ -1,5 +1,5 @@
 
-#include <stdlib.h>		//for a random numbers
+#include <stdlib.h>		//for  random numbers
 #include <signal.h>
 //#include <time.h>		//for randomization (using system time)
 #include "screen.h"
