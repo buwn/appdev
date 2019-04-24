@@ -1,5 +1,5 @@
 
-#include <stdlib.h>		//for  random numbers
+#include <stdlib.h>		//for  random numbers.
 #include <signal.h>
 //#include <time.h>		//for randomization (using system time)
 #include "screen.h"
@@ -8,7 +8,7 @@
 #include "comm.h"
 
 int main(int argc, char **argv){
-	if(argv>1){		//if the user has given some command line argument
+	if(argc >1){		//if the user has given some command line argument.
 		printf("Test tone generator\n");
 		int fR, fL, ch;
 		float duration;

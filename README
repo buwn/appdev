@@ -1,1 +1,66 @@
-# This is application development ver 1
+# This is application development ver 1.1 ----- by e1800936
+
+This application offers a possibility to turn a Raspberry Pi as a sound
+device. The application comes with 2 functions: a sound collector and a
+test tone generator.
+
+List of content
+	1. Configuration Instructions
+	2. Installation Instructions
+	3. Operating Instructions
+	4. List of Files
+	5. Copyright / Copyleft
+	6. Contact Info.
+	7. Credits and Acknowledgements
+
+1. Configuration Instructions :
+	This application development course is done in the linux with the RPI and the cables.
+	
+
+2.Installation Instructions:
+	For the installations of SD card. First of all, you should copy Rasbian OS to SD-card. For this
+	you should download Noobs image of ZIP file. This file is over 1 GB.For the installation you need 
+	power cable, monitor cable, RPI, USB keyboard. After booting it you should change some of the settings
+	such as the keyboard functions which should be the finnish keyboard.After setting all the layout you
+	 should reboot your device. 
+
+3.Operating Instructions:
+	This project has two operating methods of testing the sound project.One is by the sound collector and 
+	other is by testTone generator.
+	a. Steps for the sound collector
+		After properly creating the all the files such as main.c sound.c sound.h with proper source code 
+		format, first we makeclean the file. After that we make the file. If it runs properly then process 
+		further and run the project with ./sound.out.And if it doesn't run properly then there could be some
+		faults which it shows.To stop the program ctrl+C should be clicked at a time.
+
+	b.Steps for the tesTone generator
+		First run the command ./sound.out arg  after the command it will as ask about the number of channels
+		either 1 or 2. After this we need to create one folder on our u drive with command "scp testTone.wav
+		e1800936@shell.puv.fi". Then the sound comes from the microphone. If the frequency is set higher the 
+		pitch of the sound will be higher and  vice versa.
+
+4.List of Files
+	All together there are 11 files we created for the project. There are 5 files with .c and 3 files with .h.
+	Similarly we created README, makefile, sound.php files for this project. Files are listed below:
+	a. README
+	b. comm.c
+	c. comm.h
+	d. main.c
+	e. makefile
+	f. screen.c
+	g. screen.h
+	h. sound.c
+	i. sound.h
+	j. sound.php
+	k. testcurl.c		
+
+5.Copyright/copyleft:
+
+6.Contact Info:
+	My student ID at VAMK is e1800936. Similarly, my email address is e1800936@edu.vamk.fi.
+	
+
+7.Credits and Acknowledgemnts:
+	This course has weight of 4 credits. Grading is done by the proper submission of projects with proper 
+	source code format. In this readme all the informations about the project is described.This course is 
+	conducted by Chao Gao. This course has been completed with the completion of the sound project.
